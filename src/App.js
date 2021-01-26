@@ -1,10 +1,14 @@
 import "./styles.css";
+import PendingColumn from "./components/Pending";
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <div className="grid">
+        <PendingColumn className="col" title={"Pending"} />
+        {/* <Column className="col" title={"In Progress"} /> */}
+        {/* <Column className="col" title={"Completed"} /> */}
+      </div>
     </div>
   );
 }
